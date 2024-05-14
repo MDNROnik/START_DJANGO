@@ -1,0 +1,31 @@
+//build project
+django-admin startproject "project name"
+
+//build app
+python manage.py startapp "app name"
+//run server
+python manage.py runserver
+
+//database migrations
+python manage.py makemigrations
+python manage.py migrate
+
+//made super user of the admin
+python manage.py createsuperuser
+->admin
+->password
+->again password
+
+
+//live server
+pip install django-livereload-server
+add->'livereload' to INSTALLED_APPS
+add->'livereload.middleware.LiveReloadScript' to MIDDLEWARE
+run->python manage.py livereload
+
+// add database
+add class in models by USE MODELS system
+then add app into installed app
+then add class in to apps admin file
+then set super user
+
