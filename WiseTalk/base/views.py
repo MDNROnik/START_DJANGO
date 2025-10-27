@@ -8,9 +8,9 @@ from django.http import HttpResponse
 
 def home(req):
     print("Home page accessed ->", req)
-    return HttpResponse("Welcome to WiseTalk!")
+    return render(req, 'home.html')
 
 
 def room(req):
     print("Room page accessed ->", req)
-    return HttpResponse("This is a room page.")
+    return render(req, 'room.html')
