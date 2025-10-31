@@ -7,9 +7,16 @@
 </h1>
 <ul>
     {% for room in rooms %}
+    <span>
+        {{room.host}}
+    </span>
     <a href="/room/{{room.id}}">
         <li>{{ room.name }}</li>
     </a>
+    <span>
+        {{ room.topic }}
+    </span>
+    <hr>
     {% endfor %}
 </ul>
 
